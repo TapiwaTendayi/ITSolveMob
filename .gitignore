@@ -1,0 +1,77 @@
+# ============================================================
+# PRODUCTION .gitignore for ITSolve (Node.js + React Fullstack)
+# ============================================================
+
+# Node modules
+node_modules/
+backend/node_modules/
+frontend/node_modules/
+
+# Environment variables (never commit real secrets)
+.env
+.env.local
+.env.production
+.env.staging
+backend/.env
+frontend/.env
+**/.env
+
+# Build outputs
+frontend/build/
+frontend/dist/
+backend/dist/
+backend/public/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Coverage / testing
+coverage/
+
+# Temporary files
+temp/
+tmp/
+*.tmp
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+
+# Cache
+.cache/
+.eslintcache
+.next/
+
+# ============================================================
+# DEPLOYMENT & SERVER CONFIG (sensitive - keep off GitHub)
+# ============================================================
+DEPLOYMENT.md
+nginx.conf
+nginx/
+docker-compose.prod.yml
+docker-compose.override.yml
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+ssl/
+certs/
+
+# ============================================================
+# DATABASE & SECRETS
+# ============================================================
+*.sql
+*.sqlite
+*.db
+dump.rdb
+backend/scripts/restoreDeletedNames.js
+
